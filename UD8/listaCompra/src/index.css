@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  background-color: #eef3f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  width: 500px;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #173b63;
+  margin-bottom: 25px;
+}
+
+#agregarTexto {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#nuevoInput {
+  width: 65%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 2px solid #1765d8;
+  outline: none;
+  font-size: 16px;
+}
+
+#agregar {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #8dc1ff;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+#agregar:hover {
+  background-color: #72b0ff;
+}
+
+/* Lista */
+#lista {
+  margin-top: 30px;
+  list-style: none;
+  text-align: left;
+}
+
+#elemeto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #1c2f35;
+}
+
+#iconos i {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+#editar { color: #3cc96b; }
+#borrar { color: #e74c3c; }
+
+#borrar {
+  margin-top: 25px;
+  border: none;
+  background: none;
+  color: #ff6e6e;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#borrar:hover {
+  color: #ff2d2d;
+}
+li {
+  display: flex;
+  justify-content: space-between; /* separa texto a la izq e iconos a la der */
+  align-items: center;
+}

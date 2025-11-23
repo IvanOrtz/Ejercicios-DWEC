@@ -1,0 +1,78 @@
+body {
+  background-color: #c6e200; /* Verde lima similar al de la imagen */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.alfabeto {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.alfabeto button {
+  background: white;
+  color: #c6e200;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.categoria {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+#adivina {
+  font-size: 28px;
+  letter-spacing: 10px;
+  margin: 20px 0;
+}
+#reiniciar {
+  background-color: #c6e200;      /* Verde lima */
+  color: white;                   /* Texto blanco */
+  border: none;                   /* Sin borde */
+  border-radius: 12px;            /* Bordes redondeados */
+  padding: 12px 24px;             /* Tamaño cómodo */
+  font-size: 18px;                /* Texto grande */
+  font-weight: bold;              /* Más visible */
+  cursor: pointer;                /* Manito al pasar */
+  margin-top: 20px;               /* Separación del contenido */
+  transition: all 0.2s ease;      /* Animación suave */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombrita */
+}
+
+#reiniciar:hover {
+  background-color: #b4cb00;      /* Un verde un poco más oscuro al pasar */
+  transform: scale(1.05);         /* Efecto de “rebote” */
+}
+
+#reiniciar:active {
+  transform: scale(0.98);         /* Efecto al presionar */
+}

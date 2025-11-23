@@ -1,0 +1,131 @@
+:root{
+  --fondo: linear-gradient(180deg,#04142b 0%, #071827 60%);
+  --ancho-tablero: 880px;
+  --alto-tablero: 600px;
+  --espacio-ladrillos: 10px;
+  --alto-ladrillo: 28px;
+  --columnas-ladrillos: 6;
+  --ancho-paleta: 110px;
+  --alto-paleta: 16px;
+  --tam-pelota: 14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+body{
+  font-family: Inter, sans-serif;
+  background: var(--fondo);
+  color:#e6f0ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.juego_pagina{
+  width:100%;
+  max-width:1100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
+.juego_encabezado{text-align:center;}
+.juego_encabezado h1{font-size:1.5rem}
+.pista{font-size:0.9rem;opacity:0.8;}
+
+.juego_area{width:100%;display:flex;justify-content:center}
+
+.campo_juego{
+  width:var(--ancho-tablero);
+  height:var(--alto-tablero);
+  background: rgba(255,255,255,0.03);
+  border-radius:12px;
+  position:relative;
+  overflow:hidden;
+  padding:18px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.hud{
+  position:absolute;
+  top:10px;
+  left:10px;
+  display:flex;
+  gap:10px;
+  font-weight:bold;
+  z-index:10;
+}
+.hud div{
+  background:rgba(255,255,255,0.08);
+  padding:5px 10px;
+  border-radius:6px;
+}
+
+/* LADRILLOS */
+.ladrillos{
+  display:grid;
+  grid-template-columns: repeat(var(--columnas-ladrillos), 1fr);
+  gap:var(--espacio-ladrillos);
+  margin-bottom:20px;
+}
+.ladrillo{
+  height:var(--alto-ladrillo);
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.4);
+}
+.tipo1{background:#e74c4c}
+.tipo2{background:#f1c40f}
+.tipo3{background:#5dade2}
+.tipo4{background:#48c774}
+.tipo5{background:#9b59b6}
+.tipo6{background:#ecf0f1;opacity:0.7}
+
+/* PALETA */
+.barra{
+  width:var(--ancho-paleta);
+  height:var(--alto-paleta);
+  background:#9fb7ff;
+  border-radius:50px;
+  position:absolute;
+  bottom:25px;
+  left:400px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* PELOTA */
+.bola{
+    position:absolute;
+  width:var(--tam-pelota);
+  height:var(--tam-pelota);
+  background:#ffd166;
+  border-radius:50%;
+  box-shadow:0 4px 8px rgba(0,0,0,0.5);
+  left: 450px;
+  top: 550px;
+}
+
+/* MENSAJE SUPERPUESTO */
+.superposicion{
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,0.3);
+}
+.contenido_superposicion{
+  background:rgba(0,0,0,0.6);
+  padding:15px 25px;
+  border-radius:10px;
+  text-align:center;
+}
+
+@media (max-width:500px){
+  :root{
+    --ancho-paleta:80px;
+    --tam-pelota:12px;
+  }
+}

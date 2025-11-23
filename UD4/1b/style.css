@@ -1,0 +1,169 @@
+:root{
+  --card-bg: #ffffff;
+  --card-border: #d0d0d0;
+  --title-color: #111;
+  --tile-size: 80px;       /* tamaño de cada casilla */
+  --tile-radius: 12px;     /* radio de las esquinas */
+  --tile-gap: 18px;        /* separación entre casillas */
+}
+
+/* contenedor estilo tarjeta */
+.card{
+  display: grid;
+  width: 300px; 
+  padding: 20px;
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  
+}
+#juegos {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* columnas según el tamaño natural */
+  justify-content: center; /* centrar el grid horizontalmente */
+  align-items:flex-start; /* alinear arriba */
+  gap: 30px; /* espacio entre los juegos */
+  padding: 30px;
+   /* límite opcional para que no se estire demasiado */
+  box-sizing: border-box;
+}
+
+/* título */
+#title{
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  color: var(--title-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* grid 2x2 */
+#colores{
+  display: grid;
+  grid-template-columns: repeat(2, var(--tile-size));
+  grid-template-rows: repeat(2, var(--tile-size));
+  gap: 20px;
+  justify-content: center; /* alinea a la izquierda como en la imagen */ 
+}
+#numeros{
+display: grid;
+grid-template-columns: repeat(3, var(--tile-size));
+grid-template-rows: repeat(3, var(--tile-size));
+gap: 10px;
+margin: 0 auto;
+padding-top: 6px;
+}
+#numeros div{
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  text-align: center;
+  padding: 35%;
+  font-size:larger;
+  font-weight: bold;
+  cursor: pointer;
+}
+p{
+    text-align: center;
+}
+/* colores */
+#rojo{ 
+background: #ef3b36;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; }    /* rojo */
+#azul{ 
+background: #2185ff;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; }   /* azul */
+#amarillo{
+ background: #ffd13a;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; } /* amarillo */
+#verde{ 
+background: #2fa24f;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; } 
+#red{ 
+background: #ef3b36;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; }    /* rojo */
+#blue{ 
+background: #2185ff;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; }   /* azul */
+#yellow{
+ background: #ffd13a;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; } /* amarillo */
+#green{ 
+background: #2fa24f;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border-radius: var(--tile-radius);
+    cursor: pointer; } /* verde */
+#botonCambiante {
+  background-color: #46c3e5ff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+#circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 20px 0;
+  cursor: pointer;
+  margin-left: 55px;
+}
+#simon{
+  display: grid;
+  grid-template-columns: repeat(2, var(--tile-size));
+  grid-template-rows: repeat(2, var(--tile-size));
+  gap: 20px;
+  justify-content: center; /* alinea a la izquierda como en la imagen */ 
+}
+#barraFondo{
+width:auto; 
+height:10px; 
+background:#ddd; 
+border-radius:5px; 
+margin-top:10px;
+}
+#barra{
+width:0%; 
+height:100%; 
+background:green; 
+border-radius:5px;
+}
+#botonCorrer{
+ background-color: #e0e0e0;    /* gris claro */
+  border: 1px solid #888;       /* borde gris medio */
+  border-radius: 6px;           /* bordes redondeados */
+  padding: 6px 20px;            /* espacio interno */
+  font-size: 14px;               /* tamaño de fuente */
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  width: 60%;
+  margin-left: 20%;
+}

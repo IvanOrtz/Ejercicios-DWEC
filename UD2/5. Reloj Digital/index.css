@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Courier New';
+    margin-top: 200px;
+}
+div {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 170px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+#fecha {
+    font-size: 20px;
+}

@@ -1,0 +1,30 @@
+#personalizado { list-style: none; padding: 0; margin: 0; width: 200px; }
+#personalizado li {
+  border: 1px solid #e0e0e0;
+  padding: 12px 12px 12px 44px;
+  margin: 6px 0;
+  position: relative;
+  border-radius: 6px;
+  background: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  display: block;
+  line-height: 1;
+}
+
+/* iconos como pseudo-elementos */
+#dog::before { content: "🐶"; }
+#cat::before { content: "🐱"; }
+#chicken::before { content: "🐔"; }
+#cow::before { content: "🐮"; }
+#sheep::before { content: "🐑"; }
+#horse::before { content: "🐴"; }
+
+/* estilo del pseudo-elemento */
+#personalizado li::before{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px; /* tamaño del emoji */
+  line-height: 1;
+}

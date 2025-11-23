@@ -1,0 +1,11 @@
+#divNaranja{
+  background-color: orange;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;   /* horizontal */
+  align-items: center;       /* vertical */
+  text-align: center;
+  margin-top: 20px;
+}
