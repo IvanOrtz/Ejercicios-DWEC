@@ -18,7 +18,7 @@ window.onload = () => {
     function cargarPeliculas() {
         const { titulo, tipo, anio } = ultimaBusqueda;
 
-        fetch(`https://www.omdbapi.com/?apikey=e8d14891&s=${encodeURIComponent(titulo)}&type=${tipo}&y=${anio}&page=${contadorPaginas}`)
+        fetch(`https://www.omdbapi.com/?apikey=e8d14891&s=${titulo}&type=${tipo}&y=${anio}&page=${contadorPaginas}`)
             .then(response => response.json())
             .then(data => {
                 if (data.Search) {
