@@ -1,0 +1,28 @@
+#contenedor {
+  width: 350px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.text-dark {
+  color: black;
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-function Item({ nombre, onEditar, onBorrar }) {
+function Item({ nombre,cantidad, onEditar, onBorrar }) {
     const [modoEdicion, setModoEdicion] = useState(false);
     const [valor, setValor] = useState(nombre);
 
@@ -22,7 +22,7 @@ function Item({ nombre, onEditar, onBorrar }) {
             />
         );
     } else {
-        contenido = <span>{nombre}</span>;
+        contenido = <span> {nombre} - {cantidad} </span>;
     }
 
     return (

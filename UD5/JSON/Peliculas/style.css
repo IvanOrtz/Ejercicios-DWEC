@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),url(./img/fondo.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Contenedor de todos los items */
+#peliculas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cada poster*/
+.card {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10%;
+    font-size: 2vh;
+}
+
+/* Imagen del poster */
+.card img {
+    width: auto;
+    height: auto;
+    display: block;
+}
